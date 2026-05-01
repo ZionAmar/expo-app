@@ -8,6 +8,7 @@ import MyStatus from './components/MyStatus';
 import MyWebView from './components/MyWebView';
 import MyTxt from './components/MyTxt';
 import MyBtn from './components/MyBtn';
+import MyIcon from './components/MyIcon';
 
 export default function App() {
   return (
@@ -18,7 +19,8 @@ export default function App() {
     // <MyStatus/>
     // <MyWebView/>
     // <MyTxt/>
-    <MyBtn/>
+    // <MyBtn/>
+    <MyIcon/>
   );
 }
 
