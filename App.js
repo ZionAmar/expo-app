@@ -7,6 +7,7 @@ import MySafe from './components/MySafe';
 import MyStatus from './components/MyStatus';
 import MyWebView from './components/MyWebView';
 import MyTxt from './components/MyTxt';
+import MyBtn from './components/MyBtn';
 
 export default function App() {
   return (
@@ -16,7 +17,8 @@ export default function App() {
     // <MySafe/>
     // <MyStatus/>
     // <MyWebView/>
-    <MyTxt/>
+    // <MyTxt/>
+    <MyBtn/>
   );
 }
 
