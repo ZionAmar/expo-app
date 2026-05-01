@@ -5,6 +5,7 @@ import MyGrid from './components/MyGrid';
 import MyView2 from './components/MyView2';
 import MySafe from './components/MySafe';
 import MyStatus from './components/MyStatus';
+import MyWebView from './components/MyWebView';
 
 export default function App() {
   return (
@@ -12,7 +13,8 @@ export default function App() {
     // <MyGrid/>
     // <MyView2/>
     // <MySafe/>
-    <MyStatus/>
+    // <MyStatus/>
+    <MyWebView/>
   );
 }
 
