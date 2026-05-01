@@ -7,7 +7,7 @@ import { StatusBar } from 'expo-status-bar'
 export default function MyWebView() {
   return (
     <SafeAreaView style={{flex:1,backgroundColor:"black"}}>
-        <StatusBar style='light'/>
+        <StatusBar hidden={false} style='light'/>
         <WebView style={{flex:1}} source={{uri:'https://aztodev.com'}}/>
     </SafeAreaView>
   )

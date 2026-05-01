@@ -6,6 +6,7 @@ import MyView2 from './components/MyView2';
 import MySafe from './components/MySafe';
 import MyStatus from './components/MyStatus';
 import MyWebView from './components/MyWebView';
+import MyTxt from './components/MyTxt';
 
 export default function App() {
   return (
@@ -14,7 +15,8 @@ export default function App() {
     // <MyView2/>
     // <MySafe/>
     // <MyStatus/>
-    <MyWebView/>
+    // <MyWebView/>
+    <MyTxt/>
   );
 }
 
