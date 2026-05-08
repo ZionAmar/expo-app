@@ -28,9 +28,9 @@ export default function App() {
     // <MyTxt/>
     // <MyBtn/>
     // <MyIcon/>
-    // <StartPage/>
+    <StartPage/>
     // <MyImg/>
-    <MyBg/>
+    // <MyBg/>
   );
 }
 
