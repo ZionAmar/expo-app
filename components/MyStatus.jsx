@@ -6,8 +6,8 @@ export default function MyStatus() {
     let [isLight, setIsLight] = useState(true);
     return (
         <View>
-            <StatusBar hidden={true} style={isLight?'dark':'light'} />
-            <Text>MyStatus</Text>
+            <StatusBar hidden={false} style={isLight?'dark':'light'} />
+            {/* <Text>MyStatus</Text> */}
         </View>
     )
 }

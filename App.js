@@ -1,3 +1,7 @@
+//npx expo start
+//npx expo install react-native-safe-area-context
+//npx expo install react-native-webview
+
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Ramzor from './components/Ramzor'
@@ -9,6 +13,7 @@ import MyWebView from './components/MyWebView';
 import MyTxt from './components/MyTxt';
 import MyBtn from './components/MyBtn';
 import MyIcon from './components/MyIcon';
+import StartPage from './app/StartPage';
 
 export default function App() {
   return (
@@ -20,7 +25,8 @@ export default function App() {
     // <MyWebView/>
     // <MyTxt/>
     // <MyBtn/>
-    <MyIcon/>
+    // <MyIcon/>
+    <StartPage/>
   );
 }
 

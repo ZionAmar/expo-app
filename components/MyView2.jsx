@@ -1,15 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-export default function MyView2() {
+export default function MyView2({children}) {
   return (
     <View style={styles.container}>
         <View accessibilityLabel ="כרטיסיית פרופיל" accessible={true} style={styles.card}>
             <View/>
-            <View>
-                <View/>
-                <View/>
-            </View>
+            {children}
         </View>
     </View>
   )
@@ -23,9 +20,9 @@ const styles = StyleSheet.create({
     },
     card:{
         width:"85%",
-        height:300,
+        height:500,
         borderRadius:15,
-        backgroundColor:"#456",
+        backgroundColor:"rgb(195, 223, 251)",
         shadowColor:"black",
         shadowOffset:{width:2,height:4},
         shadowOpacity:0.6,
