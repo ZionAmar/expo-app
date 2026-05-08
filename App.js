@@ -16,6 +16,7 @@ import MyIcon from './components/MyIcon';
 import StartPage from './app/StartPage';
 import MyImg from './components/MyImg';
 import MyBg from './components/MyBg';
+import MyLink from './components/MyLink';
 
 export default function App() {
   return (
@@ -28,9 +29,10 @@ export default function App() {
     // <MyTxt/>
     // <MyBtn/>
     // <MyIcon/>
-    <StartPage/>
+    // <StartPage/>
     // <MyImg/>
     // <MyBg/>
+    <MyLink/>
   );
 }
 
