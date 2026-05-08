@@ -20,13 +20,15 @@ const styles = StyleSheet.create({
     },
     card:{
         width:"85%",
-        height:500,
+        // height:500,
         borderRadius:15,
         backgroundColor:"rgb(195, 223, 251)",
         shadowColor:"black",
         shadowOffset:{width:2,height:4},
         shadowOpacity:0.6,
         shadowRadius:10,
-        elevation:10
+        elevation:10,
+        alignItems:"center",
+        padding:20
     }
 })

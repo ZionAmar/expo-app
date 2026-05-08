@@ -17,6 +17,7 @@ import StartPage from './app/StartPage';
 import MyImg from './components/MyImg';
 import MyBg from './components/MyBg';
 import MyLink from './components/MyLink';
+import AboutPage from './app/AboutPage';
 
 export default function App() {
   return (
@@ -32,7 +33,8 @@ export default function App() {
     // <StartPage/>
     // <MyImg/>
     // <MyBg/>
-    <MyLink/>
+    // <MyLink/>
+    <AboutPage/>
   );
 }
 
