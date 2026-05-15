@@ -20,6 +20,7 @@ import MyLink from './components/MyLink';
 import AboutPage from './app/AboutPage';
 import MyScroll from './components/MyScroll';
 import MyFlat from './components/MyFlat';
+import StorePage from './app/StorePage';
 
 export default function App() {
   return (
@@ -38,7 +39,8 @@ export default function App() {
     // <MyLink/>
     // <AboutPage/>
     // <MyScroll/>
-    <MyFlat/>
+    // <MyFlat/>
+    <StorePage/>
   );
 }
 
