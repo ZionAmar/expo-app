@@ -5,7 +5,6 @@ export default function MyView2({children}) {
   return (
     <View style={styles.container}>
         <View accessibilityLabel ="כרטיסיית פרופיל" accessible={true} style={styles.card}>
-            <View/>
             {children}
         </View>
     </View>
@@ -29,6 +28,7 @@ const styles = StyleSheet.create({
         shadowRadius:10,
         elevation:10,
         alignItems:"center",
-        padding:20
+        padding:20,
+        flex:1
     }
 })
