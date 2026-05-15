@@ -53,7 +53,7 @@ export default function StorePage() {
     return (
         <MyBg>
             <MySafe>
-                <View>
+                <View style={{height:200}}>
                     <ScrollView
                         contentContainerStyle={{ gap: 15 }}
                         showsHorizontalScrollIndicator={false}
@@ -78,7 +78,7 @@ export default function StorePage() {
                     <FlatList
                         ListEmptyComponent={<Text>אין מידע</Text>}
                         numColumns={2}
-                        contentContainerStyle={{padding:20, gap: 15, alignItems: "center" }}
+                        contentContainerStyle={{ padding:20, gap: 15, alignItems: "center" }}
                         columnWrapperStyle={{ gap: 15 }}
                         data={myProd()}
                         keyExtractor={(item) => item.id}
