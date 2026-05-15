@@ -19,6 +19,7 @@ import MyBg from './components/MyBg';
 import MyLink from './components/MyLink';
 import AboutPage from './app/AboutPage';
 import MyScroll from './components/MyScroll';
+import MyFlat from './components/MyFlat';
 
 export default function App() {
   return (
@@ -36,7 +37,8 @@ export default function App() {
     // <MyBg/>
     // <MyLink/>
     // <AboutPage/>
-    <MyScroll/>
+    // <MyScroll/>
+    <MyFlat/>
   );
 }
 
