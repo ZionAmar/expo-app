@@ -21,6 +21,7 @@ import AboutPage from './app/AboutPage';
 import MyScroll from './components/MyScroll';
 import MyFlat from './components/MyFlat';
 import StorePage from './app/StorePage';
+import MyInput from './components/MyInput';
 
 export default function App() {
   return (
@@ -40,7 +41,8 @@ export default function App() {
     // <AboutPage/>
     // <MyScroll/>
     // <MyFlat/>
-    <StorePage/>
+    // <StorePage/>
+    <MyInput/>
   );
 }
 
