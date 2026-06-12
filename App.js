@@ -22,6 +22,7 @@ import MyScroll from './components/MyScroll';
 import MyFlat from './components/MyFlat';
 import StorePage from './app/StorePage';
 import MyInput from './components/MyInput';
+import MyAlert from './components/MyAlert';
 
 export default function App() {
   return (
@@ -42,7 +43,8 @@ export default function App() {
     // <MyScroll/>
     // <MyFlat/>
     // <StorePage/>
-    <MyInput/>
+    // <MyInput/>
+    <MyAlert/>
   );
 }
 
