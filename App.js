@@ -24,6 +24,7 @@ import StorePage from './app/StorePage';
 import MyInput from './components/MyInput';
 import MyAlert from './components/MyAlert';
 import MyModal from './components/MyModal';
+import MyStorage from './components/MyStorage';
 
 export default function App() {
   return (
@@ -46,7 +47,8 @@ export default function App() {
     // <StorePage/>
     // <MyInput/>
     // <MyAlert/>
-    <MyModal/>
+    // <MyModal/>
+    <MyStorage/>
   );
 }
 
