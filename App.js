@@ -23,6 +23,7 @@ import MyFlat from './components/MyFlat';
 import StorePage from './app/StorePage';
 import MyInput from './components/MyInput';
 import MyAlert from './components/MyAlert';
+import MyModal from './components/MyModal';
 
 export default function App() {
   return (
@@ -44,7 +45,8 @@ export default function App() {
     // <MyFlat/>
     // <StorePage/>
     // <MyInput/>
-    <MyAlert/>
+    // <MyAlert/>
+    <MyModal/>
   );
 }
 
