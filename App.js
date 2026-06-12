@@ -1,6 +1,7 @@
 //npx expo start
 //npx expo install react-native-safe-area-context
 //npx expo install react-native-webview
+//npx expo install @react-native-async-storage/async-storage
 
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
