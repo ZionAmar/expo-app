@@ -27,6 +27,7 @@ import MyAlert from './components/MyAlert';
 import MyModal from './components/MyModal';
 import MyStorage from './components/MyStorage';
 import LoginPage from './app/LoginPage';
+import MyAnim from './components/MyAnim';
 
 export default function App() {
   return (
@@ -51,7 +52,8 @@ export default function App() {
     // <MyAlert/>
     // <MyModal/>
     // <MyStorage/>
-    <LoginPage/>
+    // <LoginPage/>
+    <MyAnim/>
   );
 }
 
