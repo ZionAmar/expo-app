@@ -29,6 +29,7 @@ import MyStorage from './components/MyStorage';
 import LoginPage from './app/LoginPage';
 import MyAnim from './components/MyAnim';
 import MyAnim2 from './components/MyAnim2';
+import MyAnim3 from './components/MyAnim3';
 
 export default function App() {
   return (
@@ -55,7 +56,8 @@ export default function App() {
     // <MyStorage/>
     // <LoginPage/>
     // <MyAnim/>
-    <MyAnim2/>
+    // <MyAnim2/>
+    <MyAnim3/>
   );
 }
 
