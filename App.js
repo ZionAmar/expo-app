@@ -2,6 +2,7 @@
 //npx expo install react-native-safe-area-context
 //npx expo install react-native-webview
 //npx expo install @react-native-async-storage/async-storage
+// npx expo install lottie-react-native
 
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
@@ -31,6 +32,7 @@ import MyAnim from './components/MyAnim';
 import MyAnim2 from './components/MyAnim2';
 import MyAnim3 from './components/MyAnim3';
 import MyAnim4 from './components/MyAnim4';
+import MyAnim5 from './components/MyAnim5';
 
 export default function App() {
   return (
@@ -59,7 +61,8 @@ export default function App() {
     // <MyAnim/>
     // <MyAnim2/>
     // <MyAnim3/>
-    <MyAnim4/>
+    // <MyAnim4/>
+    <MyAnim5/>
   );
 }
 
