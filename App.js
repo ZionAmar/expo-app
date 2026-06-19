@@ -30,6 +30,7 @@ import LoginPage from './app/LoginPage';
 import MyAnim from './components/MyAnim';
 import MyAnim2 from './components/MyAnim2';
 import MyAnim3 from './components/MyAnim3';
+import MyAnim4 from './components/MyAnim4';
 
 export default function App() {
   return (
@@ -57,7 +58,8 @@ export default function App() {
     // <LoginPage/>
     // <MyAnim/>
     // <MyAnim2/>
-    <MyAnim3/>
+    // <MyAnim3/>
+    <MyAnim4/>
   );
 }
 
