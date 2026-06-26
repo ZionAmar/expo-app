@@ -1,44 +1,71 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import MySafe from '../components/MySafe'
-import MyView2 from '../components/MyView2'
-import MyBtn from '../components/MyBtn'
+import { Alert, Keyboard, Modal, StyleSheet, Text, TextInput, TouchableOpacity, TouchableWithoutFeedback, View } from 'react-native'
 import MyBg from '../components/MyBg'
-import Octicons from '@expo/vector-icons/Octicons';
+import { useRef, useState } from 'react'
+import { useRouter } from 'expo-router';
 
-export default function StartPage() {
+export default function LoginPage() {
+    let [isVisable, setIsVisable] = useState(true);
+    let [myUname, setMyUname] = useState("");
+    let [myPass, setMyPass] = useState("");
+    let router = useRouter();
+    let passRef = useRef(null);
+    function checkUser() {
+        let uname = "zion";
+        let pass = "1234";
+        if (uname == myUname && pass == myPass) {
+            setIsVisable(false);
+        } else {
+            Alert.alert("שם משתמש או סיסמה שגויים")
+        }
+        router.replace('/start');
+        setMyUname("");
+        setMyPass("");
+        Keyboard.dismiss();
+    }
     return (
         <MyBg>
-            <MySafe>
-                <MyView2>
-                    <Text style={styles.txt1}>My yoman</Text>
-                    <Text style={styles.txt2}>
-                        באפליקציה זו ניצור דפים בריאקט נייטיב
-                        <Text style={{ fontWeight: "bold" }}> בעיקר בשביל להדגים </Text>
-                        פיתוח אפליקציות
-                    </Text>
-                    <MyBtn>
-                        <Octicons name="move-to-start" size={24} color="black" />
-                    </MyBtn>
-                </MyView2>
-            </MySafe>
+            <Modal
+                visible={isVisable}
+                transparent={true}>
+                <TouchableWithoutFeedback>
+                    <View style={styles.screen}>
+                        <View style={styles.container}>
+                            <Text>Login</Text>
+                            <TextInput onSubmitEditing={() => passRef.current.focus()} onChangeText={setMyUname} value={myUname} style={styles.input} />
+                            <TextInput onSubmitEditing={checkUser} ref={passRef} onChangeText={setMyPass} value={myPass} style={styles.input} />
+                            <TouchableOpacity onPress={checkUser} style={styles.btn}>
+                                <Text>התחבר</Text>
+                            </TouchableOpacity>
+                        </View>
+                    </View>
+                </TouchableWithoutFeedback>
+            </Modal>
         </MyBg>
     )
 }
 
 const styles = StyleSheet.create({
-    txt1: {
-        fontSize: 45,
-        borderLeftWidth: 5,
-        fontWeight: "bold",
-        textShadowColor: "#456",
-        textShadowOffset: { width: 2, height: 2 },
-        textShadowRadius: 8,
-        margin: 20
+    screen: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center"
     },
-    txt2: {
-        textAlign: "right",
-        fontSize: 20,
-        margin: 15
+    container: {
+        width: 300,
+        height: 300,
+        backgroundColor: "rgb(134, 184, 234)",
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    btn: {
+        padding: 20,
+        borderRadius: 15,
+        backgroundColor: "rgb(95, 144, 193)"
+    },
+    input: {
+        width: "90%",
+        borderRadius: 15,
+        backgroundColor: "white",
+        marginVertical: 15
     }
 })

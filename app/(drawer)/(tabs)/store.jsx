@@ -1,7 +1,8 @@
 import { FlatList, ImageBackground, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React, { useState } from 'react'
-import MyBg from '../components/MyBg'
-import MySafe from '../components/MySafe'
+import MyBg from '../../../components/MyBg'
+import MySafe from '../../../components/MySafe'
+import { useRouter } from 'expo-router';
 
 const categories = [
     { id: 'c1', image: "https://img.mako.co.il/2022/06/09/shutterstock_1668941440_re_autoOrient_w.jpg", name: 'מוצרי חשמל' },
@@ -46,6 +47,7 @@ const products = [
 
 export default function StorePage() {
     let [catId, setCatId] = useState('');
+    let router = useRouter();
     function myProd(){
         let res = products.filter(p=>p.categoryId==catId);
         return res;
@@ -83,9 +85,13 @@ export default function StorePage() {
                         data={myProd()}
                         keyExtractor={(item) => item.id}
                         renderItem={({ item }) =>
+                            <TouchableOpacity onPress={()=>router.push({pathname:`/products/${item.id}`,params:{name:item.name}})}>
+
                             <View style={styles.prod}>
                                 <Text>{item.name}</Text>
-                            </View>} />
+                            </View>
+                            </TouchableOpacity>
+                        } />
                 </View>
             </MySafe>
         </MyBg>

@@ -1,8 +1,8 @@
 import { Image, Linking, RefreshControl, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React, { useState } from 'react'
-import MyBg from '../components/MyBg'
-import MySafe from '../components/MySafe'
-import MyView2 from '../components/MyView2'
+import MyBg from '../../components/MyBg'
+import MySafe from '../../components/MySafe'
+import MyView2 from '../../components/MyView2'
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
@@ -21,7 +21,7 @@ export default function AboutPage() {
                 <MyView2>
                     <Image
                         style={{ width: 200, height: 200, borderRadius: 100 }}
-                        source={require('../assets/images/logo.png')} />
+                        source={require('../../assets/images/logo.png')} />
                     <ScrollView
                         // horizontal={true}
                         showsVerticalScrollIndicator={false}

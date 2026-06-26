@@ -4,9 +4,9 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 
 export default function MySafe({ children }) {
     return (
-        <SafeAreaView style={{ flex: 1 }}>
+        <View style={{ flex: 1 ,marginVertical:15}}>
             {children}
-        </SafeAreaView>
+        </View>
     )
 }
 

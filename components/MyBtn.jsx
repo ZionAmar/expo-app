@@ -2,7 +2,7 @@ import { Button, Pressable, StyleSheet, Text, TouchableOpacity, View } from 'rea
 import React from 'react'
 import MyStatus from './MyStatus'
 
-export default function MyBtn({children}) {
+export default function MyBtn({children,...props}) {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       {/* <Button title='Hello' color={'red'} onPress={()=>console.log("Hello")
@@ -14,6 +14,7 @@ export default function MyBtn({children}) {
         // onPressOut={}
         onPress={() => console.log("Start")}
         onLongPress={() => console.log("hello3")}
+        {...props}
         activeOpacity={0.6}
         style={styles.btn}>
           {children}
